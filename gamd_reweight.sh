@@ -8,7 +8,7 @@ CPPTRAJ=cpptraj
 NMR_REF=/ihome/lchong/dty7/bgfs-dty7/hiv1_capsid/std/2kod/hi_pH/v00/02_min.pdb
 XTAL_REF=/ihome/lchong/dty7/bgfs-dty7/hiv1_capsid/std/1a43/hi_pH/v00/02_min.pdb
 
-if [ $1 = "prep" ] ; then
+if [ $1 = "calc" ] ; then
     # calc datasets of interest
     C0="    parm m01_2kod_gamd_dry.prmtop \n"
     C0="$C0 trajin 06_gamd_prod_dry.nc 1 198000 1 \n"
@@ -29,7 +29,8 @@ if [ $1 = "prep" ] ; then
     echo -e "$C0" > calc.cpp
     #$DO_PARALLEL \
     $CPPTRAJ -i calc.cpp > calc.cpp.out &&
-    
+
+elif [ $1 = "prep" ] ; then
     # make clean data files for reweighting
     cat XTAL_REF_RMS_Heavy.dat | tail -n +2 | awk {'print $2'} > xrms.dat
     cat 1-75_39_c2_angle.dat | tail -n +2 | awk {'print $2'} > c2.dat
@@ -45,11 +46,11 @@ if [ $1 = "prep" ] ; then
     #tail -n $nlines gamd.log | awk 'NR%1==0' | awk '{print ($8+$7)/(0.001987*298)"                " $2  "             " ($8+$7)}' > weights.dat
     tail -n +5 gamd.log | awk 'NR%1==0' | awk '{print ($8+$7)/(0.001987*298)"                " $2  "             " ($8+$7)}' > weights.dat
 
-elif [ $1 = "run" ] ; then
+elif [ $1 = "rw" ] ; then
     # perform reweighting of GaMD data
     # args : Emax (kcal/mol), cutoff (kcal/mol), binx, biny, data, T, TODO:xdim, ydim
-    bash ~/py_reweighting/reweight-2d.sh 100 100 6 6 c2_xrms.tsv $T
+    bash py_reweighting/reweight-2d.sh 100 100 6 6 c2_xrms.tsv $T
 
 else
-    echo "ARG 1 MUST BE 'prep' or 'run'"
+    echo "ARG 1 MUST BE 'calc', 'prep', or 'rw'"
 fi
