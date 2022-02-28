@@ -1,0 +1,1359 @@
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input xrms_c2.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -discY 10 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    xrms_c2.tsv
+dV all: avg =  42.358603928101886 std =  9.52094112343447
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input xrms_c2.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -discY 10 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    xrms_c2.tsv
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input xrms_c2.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -discY 10 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    xrms_c2.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input xrms_c2.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -discY 10 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    xrms_c2.tsv
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input xrms_c2.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -discY 10 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    xrms_c2.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input xrms_c2.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -discY 10 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    xrms_c2.tsv
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input xrms_c2.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -discY 10 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    xrms_c2.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+[-10.0, 10.0, 70.0, 10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input xrms_c2.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -discY 10 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    xrms_c2.tsv
+[-10.0, 10.0, 70.0, 10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T  -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T  -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T  -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T  -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 100 -Xdim 0 100 -discY 100 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 100 --Xdim 0 100 -discY 100 -Ydim 0 15 -job noweight
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+[10.0, 70.0, 10.0, -10.0]
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[10.0, 70.0, 10.0, -10.0]
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 -Xdim 0 100 -discY 10 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.62869467323118
+pmf_min-c2 =  -139.3855083388383
+pmf_min-c3 =  -391.1556898194822
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 10 --Xdim 0 100 -discY 10 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[10.0, 70.0, 10.0, -10.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 100 -Xdim 0 100 -discY 100 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.580399766584556
+pmf_min-c2 =  -126.11792368425441
+pmf_min-c3 =  0.0
+[-100.0, 100.0, 100.0, -100.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 100 --Xdim 0 100 -discY 100 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[-100.0, 100.0, 100.0, -100.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 100 -Xdim 0 100 -discY 100 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.580399766584556
+pmf_min-c2 =  -126.11792368425441
+pmf_min-c3 =  0.0
+[-100.0, 100.0, 100.0, -100.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 100 --Xdim 0 100 -discY 100 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[-100.0, 100.0, 100.0, -100.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 100 -Xdim 0 100 -discY 100 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.580399766584556
+pmf_min-c2 =  -126.11792368425441
+pmf_min-c3 =  0.0
+[-100.0, 100.0, 100.0, -100.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 100 --Xdim 0 100 -discY 100 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[-100.0, 100.0, 100.0, -100.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 10 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 20 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 20 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 20 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 20 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 20 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 20 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 20 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 20 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 20 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 20 -cutoff 20 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 50 -cutoff 20 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 50 -cutoff 20 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 100 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 100 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 200 -cutoff 200 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 200 -cutoff 200 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 150 -cutoff 150 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 150 -cutoff 150 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 150 -cutoff 150 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 150 -cutoff 150 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 50 -cutoff 50 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 50 -cutoff 50 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 25 -cutoff 25 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 25 -cutoff 25 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 25 -cutoff 25 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 25 -cutoff 25 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 100 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+dV all: avg =  42.358817860444944 std =  9.520489261301037
+pmf_min-c1 =  -49.51987515192947
+pmf_min-c2 =  -166.79185901874965
+pmf_min-c3 =  -418.20238532327176
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 100 -discX 6 --Xdim 0 100 -discY 6 -Ydim 0 15 -job noweight
+============================================================
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.
+  
+Authors: Yinglong Miao <yinglong.miao@gmail.com>
+         Bill Sinko <wsinko@gmail.com>
+
+Copyright <2014-2019> <Yinglong Miao and William Sinko> 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "PyReweighting"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: 
+
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+ 
+DATA LOADED:    c2_xrms.tsv
+[18.0, 72.0, 12.0, -6.0]
+FIGURE SAVED 2D_Free_energy_surface.png
+FIGURE SAVED weights.png
+ 
+END

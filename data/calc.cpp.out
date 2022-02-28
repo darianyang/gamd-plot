@@ -1,0 +1,142 @@
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.11)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/22 13:11:09
+| Available memory: 173.307 GB
+
+INPUT: Reading input from 'calc.cpp'
+  [parm m01_2kod_gamd_dry.prmtop]
+	Reading 'm01_2kod_gamd_dry.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin 06_gamd_prod_dry.nc 1 198000 1]
+	Reading '06_gamd_prod_dry.nc' as Amber NetCDF
+  [reference /ihome/lchong/dty7/bgfs-dty7/hiv1_capsid/std/1a43/hi_pH/v00/02_min.pdb name <xtal>]
+	Reading '/ihome/lchong/dty7/bgfs-dty7/hiv1_capsid/std/1a43/hi_pH/v00/02_min.pdb' as PDB
+	Read CRYST1 info from PDB: a=92.507 b=92.507 c=92.507 alpha=109.47 beta=109.47 gamma=109.47
+Warning: Low precision truncated octahedron angles detected (109.47 vs 109.471).
+Warning:   If desired, the 'box' command can be used during processing
+Warning:   to set higher-precision angles.
+Warning: PDB 02_min.pdb: Reading frame 20, got 2204 atoms, expected 2760.
+Warning: Only using frames 1-19
+Warning: Reference has 19 frames, only reading frame 1
+	Read CRYST1 info from PDB: a=92.507 b=92.507 c=92.507 alpha=109.47 beta=109.47 gamma=109.47
+	Setting active reference for distance-based masks: '02_min.pdb'
+  [reference /ihome/lchong/dty7/bgfs-dty7/hiv1_capsid/std/2kod/hi_pH/v00/02_min.pdb name <nmr>]
+	Reading '/ihome/lchong/dty7/bgfs-dty7/hiv1_capsid/std/2kod/hi_pH/v00/02_min.pdb' as PDB
+	Read CRYST1 info from PDB: a=92.507 b=92.507 c=92.507 alpha=109.47 beta=109.47 gamma=109.47
+Warning: Low precision truncated octahedron angles detected (109.47 vs 109.471).
+Warning:   If desired, the 'box' command can be used during processing
+Warning:   to set higher-precision angles.
+Warning: PDB 02_min.pdb: Reading frame 20, got 2204 atoms, expected 2760.
+Warning: Only using frames 1-19
+Warning: Reference has 19 frames, only reading frame 1
+	Read CRYST1 info from PDB: a=92.507 b=92.507 c=92.507 alpha=109.47 beta=109.47 gamma=109.47
+  [rms XREF_RMS :1-75,94-163&!@H= out XTAL_REF_RMS_Heavy.dat ref <xtal> mass]
+    RMSD: (:1-75,94-163&!@H*), reference is "<xtal>:1" (:1-75,94-163&!@H*), mass-weighted.
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms NMR_RMS :1-75,94-163&!@H= out NMR_REF_RMS_Heavy.dat ref <nmr> mass]
+    RMSD: (:1-75,94-163&!@H*), reference is "<nmr>:1" (:1-75,94-163&!@H*), mass-weighted.
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [vector D1 :1-75@CA,C,O,N :39@CA,C,O,N]
+    VECTOR: Type Mask, mask [:1-75@CA,C,O,N], second mask [:39@CA,C,O,N]
+  [vector D2 :89-163@CA,C,O,N :127@CA,C,O,N]
+    VECTOR: Type Mask, mask [:89-163@CA,C,O,N], second mask [:127@CA,C,O,N]
+  [vectormath vec1 D1 vec2 D2 out 1-75_39_c2_angle.dat name C2_Angle dotangle]
+    VECTORMATH: Calculating Angle from dot product of vectors D1 and D2
+	Vectors will be normalized.
+	Results are written to 1-75_39_c2_angle.dat
+  [distance M1-E175-Oe_M2-W184-He1 :32@OE1,OE2 :129@HE1 out M1-Oe_M2-He1.dat]
+    DISTANCE: :32@OE1,OE2 to :129@HE1, center of mass.
+  [distance M2-E175-Oe_M1-W184-He1 :120@OE1,OE2 :41@HE1 out M2-Oe_M1-He1.dat]
+    DISTANCE: :120@OE1,OE2 to :41@HE1, center of mass.
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: m01_2kod_gamd_dry.prmtop, 2760 atoms, 176 res, box: Trunc. Oct., 2 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: '06_gamd_prod_dry.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_gamd_dry.prmtop (Trunc. Oct. box) (reading 198000 of 200000)
+  Coordinate processing will occur on 198000 frames.
+
+REFERENCE FRAMES (2 total):
+    0: <xtal>:1
+    1: <nmr>:1
+	Active reference frame for distance-based masks is '<xtal>:1'
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'm01_2kod_gamd_dry.prmtop' (6 actions):
+  0: [rms XREF_RMS :1-75,94-163&!@H= out XTAL_REF_RMS_Heavy.dat ref <xtal> mass]
+	Target mask: [:1-75,94-163&!@H*](1154)
+	Reference mask: [:1-75,94-163&!@H*](1154)
+Warning: Coordinates are being rotated and box coordinates are present.
+Warning: Unit cell vectors are NOT rotated; imaging will not be possible
+Warning:  after the RMS-fit is performed.
+  1: [rms NMR_RMS :1-75,94-163&!@H= out NMR_REF_RMS_Heavy.dat ref <nmr> mass]
+	Target mask: [:1-75,94-163&!@H*](1154)
+	Reference mask: [:1-75,94-163&!@H*](1154)
+Warning: Coordinates are being rotated and box coordinates are present.
+Warning: Unit cell vectors are NOT rotated; imaging will not be possible
+Warning:  after the RMS-fit is performed.
+  2: [vector D1 :1-75@CA,C,O,N :39@CA,C,O,N]
+	Mask [:1-75@CA,C,O,N] corresponds to 300 atoms.
+	Mask [:39@CA,C,O,N] corresponds to 4 atoms.
+  3: [vector D2 :89-163@CA,C,O,N :127@CA,C,O,N]
+	Mask [:89-163@CA,C,O,N] corresponds to 300 atoms.
+	Mask [:127@CA,C,O,N] corresponds to 4 atoms.
+  4: [distance M1-E175-Oe_M2-W184-He1 :32@OE1,OE2 :129@HE1 out M1-Oe_M2-He1.dat]
+	:32@OE1,OE2 (2 atoms) to :129@HE1 (1 atoms), imaged.
+  5: [distance M2-E175-Oe_M1-W184-He1 :120@OE1,OE2 :41@HE1 out M2-Oe_M1-He1.dat]
+	:120@OE1,OE2 (2 atoms) to :41@HE1 (1 atoms), imaged.
+----- 06_gamd_prod_dry.nc (1-198000, 1) -----
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+
+Read 198000 frames and processed 198000 frames.
+TIME: Avg. throughput= 9434.7952 frames / second.
+
+ACTION OUTPUT:
+
+ANALYSIS: Performing 1 analyses:
+  0: [vectormath vec1 D1 vec2 D2 out 1-75_39_c2_angle.dat name C2_Angle dotangle]
+	'D1' size 198000, 'D2' size 198000, output size 198000
+
+TIME: Analyses took 0.0065 seconds.
+
+DATASETS (7 total):
+	XREF_RMS "XREF_RMS" (double, rms), size is 198000 (1.584 MB)
+	NMR_RMS "NMR_RMS" (double, rms), size is 198000 (1.584 MB)
+	D1 "D1" (vector, vector), size is 198000 (9.504 MB)
+	D2 "D2" (vector, vector), size is 198000 (9.504 MB)
+	C2_Angle "C2_Angle" (double), size is 198000 (1.584 MB)
+	M1-E175-Oe_M2-W184-He1 "M1-E175-Oe_M2-W184-He1" (double, distance), size is 198000 (1.584 MB)
+	M2-E175-Oe_M1-W184-He1 "M2-E175-Oe_M1-W184-He1" (double, distance), size is 198000 (1.584 MB)
+    Total data set memory usage is at least 26.928 MB
+
+DATAFILES (5 total):
+  XTAL_REF_RMS_Heavy.dat (Standard Data File):  XREF_RMS
+  NMR_REF_RMS_Heavy.dat (Standard Data File):  NMR_RMS
+  1-75_39_c2_angle.dat (Standard Data File):  C2_Angle
+  M1-Oe_M2-He1.dat (Standard Data File):  M1-E175-Oe_M2-W184-He1
+  M2-Oe_M1-He1.dat (Standard Data File):  M2-E175-Oe_M1-W184-He1
+
+RUN TIMING:
+TIME:		Init               : 0.0001 s (  0.00%)
+TIME:		Trajectory Process : 20.9861 s ( 96.55%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0065 s (  0.03%)
+TIME:		Data File Write    : 0.7439 s (  3.42%)
+TIME:		Other              : 0.0001 s (  0.00%)
+TIME:	Run Total 21.7366 s
+---------- RUN END ---------------------------------------------------
+  [quit]
+TIME: Total execution time: 21.9757 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

@@ -1,0 +1,10 @@
+Warning: When compiling code please add the following flags to nvcc:
+         -gencode arch=compute_35,code=[compute_35,sm_35] \
+         -gencode arch=compute_61,code=[compute_61,sm_61] 
+         -gencode arch=compute_70,code=[compute_70,sm_70] 
++ SANDER=pmemd.cuda
++ INP=gamd_test.in
++ TOP=m01_2kod_12A.prmtop
++ CRD=05_eq3.rst
++ OUT=06_gamd_prod
++ pmemd.cuda -O -i gamd_test.in -p m01_2kod_12A.prmtop -c 05_eq3.rst -r 06_gamd_prod.rst -o 06_gamd_prod.out -e 06_gamd_prod.ene -v 06_gamd_prod.vel -inf 06_gamd_prod.nfo -x 06_gamd_prod.ncdf
