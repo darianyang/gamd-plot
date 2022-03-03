@@ -1,0 +1,1 @@
+python3 /ihome/lchong/dty7/py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 100 -discX 6 -discY 6 -job noweight

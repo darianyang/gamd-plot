@@ -1,5 +1,5 @@
 #!/bin/bash
-dir_codes=/ihome/lchong/dty7/py_reweighting
+dir_codes=/home/dty7/Projects/gamd_plot/py_reweighting
 Emax=$1
 cutoff=$2
 binx=$3

@@ -207,11 +207,7 @@ def main():
         plt.xlabel('Dimer Angle',fontsize=18)
         plt.ylabel('XTAL RMSD',fontsize=18)
 
-##    	plt.xlabel(r'$\phi$',fontsize=18)
-##    	plt.ylabel(r'$\psi$',fontsize=18)
-##    	plt.xlabel(r'$\chi$1',fontsize=18)
-##    	plt.ylabel(r'$\chi$2',fontsize=18)
-        plt.savefig('2D_Free_energy_surface.png',bbox_inches=0)
+        plt.savefig('figures/2D_Free_energy_surface.png',bbox_inches=0)
         print ("FIGURE SAVED 2D_Free_energy_surface.png")
     
 ###PLOTTING FUNCTION FOR WEIGHTS histogram
@@ -222,7 +218,7 @@ def main():
         plt.yscale('log')   ###if typerror is thrown delete .matplotlib/fontList.cache  file
         plt.xticks(fontsize='18')
         plt.yticks(fontsize='18')
-        plt.savefig('weights.png',bbox_inches=0)
+        plt.savefig('figures/weights.png',bbox_inches=0)
         print ("FIGURE SAVED weights.png")
 
     print (" ")
