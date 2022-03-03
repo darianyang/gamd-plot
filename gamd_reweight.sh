@@ -5,38 +5,40 @@
 T=298
 CPPTRAJ=cpptraj
 
-NMR_REF=/ihome/lchong/dty7/bgfs-dty7/hiv1_capsid/std/2kod/hi_pH/v00/02_min.pdb
-XTAL_REF=/ihome/lchong/dty7/bgfs-dty7/hiv1_capsid/std/1a43/hi_pH/v00/02_min.pdb
+NMR_REF=data/02_min_nmr.pdb
+XTAL_REF=data/02_min_xtal.pdb
+
+#TODO: update directories for git repo 
 
 if [ $1 = "calc" ] ; then
     # calc datasets of interest
-    C0="    parm m01_2kod_gamd_dry.prmtop \n"
-    C0="$C0 trajin 06_gamd_prod_dry.nc 1 198000 1 \n"
+    C0="    parm data/m01_2kod_gamd_dry.prmtop \n"
+    C0="$C0 trajin data/06_gamd_prod_dry.nc 1 198000 1 \n"
     C0="$C0 reference $XTAL_REF name <xtal> \n"
     C0="$C0 reference $NMR_REF name <nmr> \n"
-    C0="$C0 rms XREF_RMS :1-75,94-163&!@H= out XTAL_REF_RMS_Heavy.dat ref <xtal> mass \n"
-    C0="$C0 rms NMR_RMS :1-75,94-163&!@H= out NMR_REF_RMS_Heavy.dat ref <nmr> mass \n"
+    C0="$C0 rms XREF_RMS :1-75,94-163&!@H= out data/XTAL_REF_RMS_Heavy.dat ref <xtal> mass \n"
+    C0="$C0 rms NMR_RMS :1-75,94-163&!@H= out data/NMR_REF_RMS_Heavy.dat ref <nmr> mass \n"
     C0="$C0 # calc dimer C2 helical angle \n"
     C0="$C0 vector D1 :1-75@CA,C,O,N :39@CA,C,O,N \n"
     C0="$C0 vector D2 :89-163@CA,C,O,N :127@CA,C,O,N \n"
-    C0="$C0 vectormath vec1 D1 vec2 D2 out 1-75_39_c2_angle.dat name C2_Angle dotangle \n"
+    C0="$C0 vectormath vec1 D1 vec2 D2 out data/1-75_39_c2_angle.dat name C2_Angle dotangle \n"
     C0="$C0 # calc distance between (COM) both O eps of E175 and H eps 1 of W184 \n"
-    C0="$C0 distance M1-E175-Oe_M2-W184-He1 :32@OE1,OE2 :129@HE1 out M1-Oe_M2-He1.dat \n"
-    C0="$C0 distance M2-E175-Oe_M1-W184-He1 :120@OE1,OE2 :41@HE1 out M2-Oe_M1-He1.dat \n"
+    C0="$C0 distance M1-E175-Oe_M2-W184-He1 :32@OE1,OE2 :129@HE1 out data/M1-Oe_M2-He1.dat \n"
+    C0="$C0 distance M2-E175-Oe_M1-W184-He1 :120@OE1,OE2 :41@HE1 out data/M2-Oe_M1-He1.dat \n"
     C0="$C0 run \n"
     C0="$C0 quit"
     
-    echo -e "$C0" > calc.cpp
+    echo -e "$C0" > data/calc.cpp
     #$DO_PARALLEL \
-    $CPPTRAJ -i calc.cpp > calc.cpp.out &&
+    $CPPTRAJ -i data/calc.cpp > data/calc.cpp.out
 
 elif [ $1 = "prep" ] ; then
     # make clean data files for reweighting
-    cat XTAL_REF_RMS_Heavy.dat | tail -n +2 | awk {'print $2'} > xrms.dat
-    cat 1-75_39_c2_angle.dat | tail -n +2 | awk {'print $2'} > c2.dat
+    cat data/XTAL_REF_RMS_Heavy.dat | tail -n +2 | awk {'print $2'} > data/xrms.dat
+    cat data/1-75_39_c2_angle.dat | tail -n +2 | awk {'print $2'} > data/c2.dat
     # make 2D data file tsv
-    paste xrms.dat c2.dat | column -s $'\t' -t > xrms_c2.tsv
-    paste c2.dat xrms.dat | column -s $'\t' -t > c2_xrms.tsv
+    paste data/xrms.dat data/c2.dat | column -s $'\t' -t > data/xrms_c2.tsv
+    paste data/c2.dat data/xrms.dat | column -s $'\t' -t > data/c2_xrms.tsv
     
     # NOTE: weights and data files must be same size
     # make weights file from gamd log file
@@ -44,12 +46,13 @@ elif [ $1 = "prep" ] ; then
     # Column 1: dV in units of kbT; column 2: timestep; column 3: dV in units of kcal/mol 
     #nlines=198000 # number of data points used for reweighting
     #tail -n $nlines gamd.log | awk 'NR%1==0' | awk '{print ($8+$7)/(0.001987*298)"                " $2  "             " ($8+$7)}' > weights.dat
-    tail -n +5 gamd.log | awk 'NR%1==0' | awk '{print ($8+$7)/(0.001987*298)"                " $2  "             " ($8+$7)}' > weights.dat
+    tail -n +5 data/gamd.log | awk 'NR%1==0' | awk '{print ($8+$7)/(0.001987*298)"                " $2  "             " ($8+$7)}' > data/weights.dat
 
 elif [ $1 = "rw" ] ; then
     # perform reweighting of GaMD data
     # args : Emax (kcal/mol), cutoff (kcal/mol), binx, biny, data, T, TODO:xdim, ydim
-    bash py_reweighting/reweight-2d.sh 100 100 6 6 c2_xrms.tsv $T
+    #bash py_reweighting/reweight-2d.sh 100 100 6 6 c2_xrms.tsv $T
+    python3 py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T $T -Emax 100 -cutoff 100 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight data/weights.dat"
 
 else
     echo "ARG 1 MUST BE 'calc', 'prep', or 'rw'"
