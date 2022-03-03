@@ -50,7 +50,7 @@ elif [ $1 = "rw" ] ; then
     # perform reweighting of GaMD data
     # args : Emax (kcal/mol), cutoff (kcal/mol), binx, biny, data, T
     #bash py_reweighting/reweight-2d.sh 100 100 6 6 c2_xrms.tsv 298
-    python3 ../py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 100 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight weights.dat
+    python3 ../py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 100 -discX 1 -Xdim 0 100 -discY 0.1 -Ydim 0 10 -job amdweight_CE -weight weights.dat
 
 else
     echo "ARG 1 MUST BE 'calc', 'prep', or 'rw'"

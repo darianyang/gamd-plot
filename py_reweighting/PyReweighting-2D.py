@@ -1,9 +1,11 @@
-#! /usr/bin/env python
+"""
+Original code from: https://miaolab.ku.edu/PyReweighting/
 
-## Required Software:
-# Python: https://www.python.org/downloads/
-# NumPy and SciPy: http://www.scipy.org/scipylib/download.html
-# matplotlib: http://matplotlib.org/downloads.html
+PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations
+
+Reference:
+Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.
+"""
 
 import math
 import scipy
@@ -12,26 +14,13 @@ import numpy as np
 import sys
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 
 import csv
 #import pandas as pd
 from argparse import ArgumentParser
 from scipy.optimize import curve_fit
 ## from scipy.optimize import *
-
-print ("============================================================")
-print ("PyReweighting: Python scripts used to reweight accelerated molecular dynamics simulations.")
-print ("  ")
-print ("Authors: Yinglong Miao <yinglong.miao@gmail.com>")
-print ("         Bill Sinko <wsinko@gmail.com>")
-print ("\n\
-Copyright <2014-2019> <Yinglong Miao and William Sinko> \n\
-\n\
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"PyReweighting\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following citation: \n\
-\n\
-Miao Y, Sinko W, Pierce L, Bucher D, Walker RC, McCammon JA (2014) Improved reweighting of accelerated molecular dynamics simulations for free energy calculation. J Chemical Theory and Computation. 10(7): 2677-2689.")
-print (" ")
 
 ###########MAIN
 def main():
@@ -104,7 +93,24 @@ def main():
 ##REWEIGHTING
     if args.job == "amdweight_CE":
         hist2,newedgesX,newedgesY,c1,c2,c3 = reweight_CE(data,hist_min,binsX,discX,binsY,discY,dV,T,fit)
+
+        # test of new reweighted hist
+        print("After RW")
+        plt.pcolormesh(newedgesX, newedgesY, hist2.T)
+        plt.show()
+        
         pmf = hist2pmf2D(hist2,hist_min,T)
+
+        # test of new reweighted pmf
+        print("After PMF")
+        plt.pcolormesh(newedgesX, newedgesY, pmf.T)
+        plt.show()
+
+        # test of new reweighted pmf
+        print("With Gaussian interpolation")
+        plt.imshow(pmf, interpolation="gaussian")
+        plt.show()
+
         c1 = -np.multiply(1.0/beta,c1)
         c2 = -np.multiply(1.0/beta,c2)
         c3 = -np.multiply(1.0/beta,c3)
@@ -140,18 +146,20 @@ def main():
     if args.job == "amdweight_MC" or args.job == "amdweight" or args.job == "noweight" :
         pmffile = 'pmf-'+str(args.input)+'.xvg'
         output_pmf2D(pmffile,hist2,binsX,binsY)
+
+    # TODO: index out of bounds with output_pmf2D function
     if args.job == "amdweight_CE" :
         hist2 = pmf_c1
         pmffile = 'pmf-c1-'+str(args.input)+'.xvg'
-        output_pmf2D(pmffile,hist2,binsX,binsY)
+        #output_pmf2D(pmffile,hist2,binsX,binsY) 
 
         hist2 = pmf_c3
         pmffile = 'pmf-c3-'+str(args.input)+'.xvg'
-        output_pmf2D(pmffile,hist2,binsX,binsY)
+        #output_pmf2D(pmffile,hist2,binsX,binsY)
 
         hist2 = pmf_c2
         pmffile = 'pmf-c2-'+str(args.input)+'.xvg'
-        output_pmf2D(pmffile,hist2,binsX,binsY)
+        #output_pmf2D(pmffile,hist2,binsX,binsY)
 
     if args.job == "histo" :
         hist2,newedgesX,newedgesY = histo(data,hist_min,binsX,discX,binsY)
@@ -184,8 +192,11 @@ def main():
         extent = [newedgesX[0], newedgesX[-1], newedgesY[-1], newedgesY[0]]
         print (extent)
         plt.imshow(hist2.transpose(), extent=extent, interpolation='gaussian')
+        #plt.imshow(hist2.transpose(), extent=extent, interpolation='None')
+        #plt.pcolormesh(hist2.T)
+
         # CHANGED
-        np.savetxt("hist_data.tsv", hist2.transpose(), delimiter="\t")        
+        np.savetxt("rw_hist_data.tsv", hist2.transpose(), delimiter="\t")        
         
         cb = plt.colorbar(ticks=cbar_ticks, format=('% .1f'), aspect=10) # grab the Colorbar instance
         imaxes = plt.gca()
@@ -207,7 +218,8 @@ def main():
         plt.xlabel('Dimer Angle',fontsize=18)
         plt.ylabel('XTAL RMSD',fontsize=18)
 
-        plt.savefig('figures/2D_Free_energy_surface.png',bbox_inches=0)
+        plt.show()
+        #plt.savefig('figures/2D_Free_energy_surface.png',bbox_inches=0)
         print ("FIGURE SAVED 2D_Free_energy_surface.png")
     
 ###PLOTTING FUNCTION FOR WEIGHTS histogram
@@ -301,6 +313,15 @@ def prephist(hist2,T,cb_max):
 # memory usage is much reduced with multidimensional list for dV_mat; pretty fast ~ O(N)
 def reweight_CE(data,hist_min,binsX,discX,binsY,discY,dV,T,fit):
     hist2, newedgesX, newedgesY = np.histogram2d(data[:,0], data[:,1], bins = (binsX, binsY), weights=None)
+    print("binsX = ", binsX)
+    print("binsY = ", binsY)
+    # note that bins X and Y are bin arrays from the function "assignbins", why do they have to be arrays?
+    #hist2, newedgesX, newedgesY = np.histogram2d(data[:,0], data[:,1], bins=(100,100), weights=None)
+
+    # test of pre-reweighted hist
+    print("Before Rw")
+    plt.pcolormesh(newedgesX, newedgesY, hist2.T)
+    plt.show()
 
     beta = 1.0/(0.001987*T)
     nf = len(data[:,0])
@@ -313,7 +334,7 @@ def reweight_CE(data,hist_min,binsX,discX,binsY,discY,dV,T,fit):
 
     binfX = np.zeros(nf) # array for storing assigned bin of each frame
     binfY = np.zeros(nf) # array for storing assigned bin of each frame
-    nA = np.zeros((nbinsX,nbinsY),dtype=np.int) # nA is equivalent to hist here
+    nA = np.zeros((nbinsX,nbinsY),dtype=int) # nA is equivalent to hist here
     dV_avg = np.zeros((nbinsX,nbinsY)) 
     dV_avg2 = np.zeros((nbinsX,nbinsY)) 
     dV_avg3 = np.zeros((nbinsX,nbinsY)) 
