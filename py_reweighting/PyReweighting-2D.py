@@ -108,7 +108,7 @@ def main():
 
         # test of new reweighted pmf
         print("With Gaussian interpolation")
-        plt.imshow(pmf, interpolation="gaussian")
+        plt.imshow(pmf.T, interpolation="gaussian")
         plt.show()
 
         c1 = -np.multiply(1.0/beta,c1)
