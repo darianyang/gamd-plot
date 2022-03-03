@@ -2,13 +2,10 @@
 # process and analyze gamd output data
 # calculate data and reweight
 
-T=298
 CPPTRAJ=cpptraj
 
 NMR_REF=data/02_min_nmr.pdb
 XTAL_REF=data/02_min_xtal.pdb
-
-#TODO: update directories for git repo 
 
 if [ $1 = "calc" ] ; then
     # calc datasets of interest
@@ -52,7 +49,7 @@ elif [ $1 = "rw" ] ; then
     # perform reweighting of GaMD data
     # args : Emax (kcal/mol), cutoff (kcal/mol), binx, biny, data, T, TODO:xdim, ydim
     #bash py_reweighting/reweight-2d.sh 100 100 6 6 c2_xrms.tsv $T
-    python3 py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T $T -Emax 100 -cutoff 100 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight data/weights.dat"
+    python3 py_reweighting/PyReweighting-2D.py -input c2_xrms.tsv -T 298 -Emax 100 -cutoff 100 -discX 6 -Xdim 0 100 -discY 6 -Ydim 0 15 -job amdweight_CE -weight data/weights.dat
 
 else
     echo "ARG 1 MUST BE 'calc', 'prep', or 'rw'"
