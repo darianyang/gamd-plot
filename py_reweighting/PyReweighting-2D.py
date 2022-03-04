@@ -149,8 +149,11 @@ def main():
           MCweight=np.add(MCweight,(np.divide(np.power(beta_dV, x), float(scipy.special.factorial(x)))))
         weights=MCweight
         hist2,newedgesX,newedgesY = np.histogram2d(data[:,0], data[:,1], bins = (binsX, binsY), weights=weights)
+        
+        # updated this to use kT instead of kcal/mol 
         #hist2=prephist(hist2,T,cb_max)
         hist2 = -np.log(np.divide(hist2, np.max(hist2))) # norm
+
     elif args.job == "amdweight":
         hist2,newedgesX,newedgesY = np.histogram2d(data[:,0], data[:,1], bins = (binsX, binsY), weights=weights)
         hist2=prephist(hist2,T,cb_max)
@@ -163,19 +166,18 @@ def main():
         pmffile = 'pmf-'+str(args.input)+'.xvg'
         output_pmf2D(pmffile,hist2,binsX,binsY)
 
-    # TODO: index out of bounds with output_pmf2D function
     if args.job == "amdweight_CE" :
         hist2 = pmf_c1
         pmffile = 'pmf-c1-'+str(args.input)+'.xvg'
-        #output_pmf2D(pmffile,hist2,binsX,binsY) 
+        output_pmf2D(pmffile,hist2,binsX,binsY) 
 
         hist2 = pmf_c3
         pmffile = 'pmf-c3-'+str(args.input)+'.xvg'
-        #output_pmf2D(pmffile,hist2,binsX,binsY)
+        output_pmf2D(pmffile,hist2,binsX,binsY)
 
         hist2 = pmf_c2
         pmffile = 'pmf-c2-'+str(args.input)+'.xvg'
-        #output_pmf2D(pmffile,hist2,binsX,binsY)
+        output_pmf2D(pmffile,hist2,binsX,binsY)
 
     if args.job == "histo" :
         hist2,newedgesX,newedgesY = histo(data,hist_min,binsX,discX,binsY)
@@ -203,8 +205,8 @@ def main():
 
 ###PLOTTING FUNCTION FOR FREE ENERGY FIGURE
     if plt_figs :
-        #cbar_ticks=[0, cb_max*.25, cb_max*.5, cb_max*.75, cb_max]
-        cbar_ticks=[0, cb_max*.25, cb_max*.5, cb_max*.75, 8.0] # OG
+        cbar_ticks=[0, cb_max*.25, cb_max*.5, cb_max*.75, cb_max]
+        #cbar_ticks=[0, cb_max*.25, cb_max*.5, cb_max*.75, 8.0] # OG
         
         #plt.figure(2, figsize=(11,8.5)) # og
         
