@@ -83,6 +83,21 @@ def main():
         T = 300	# simulation temperature
     beta = 1.0/(0.001987*T)
 
+## New feature: pre-reweighting pdist in kT (-ln(P(x)))
+    data_pre = np.loadtxt(args.input)
+    Z, xedges, yedges = np.histogram2d(data_pre[:,0], data_pre[:,1], bins=100)
+    # normalize the pdist (-ln(P/P(max)))
+    Z = -np.log(np.divide(Z, np.max(Z)))
+    plt.pcolormesh(xedges, yedges, Z.T)
+    plt.colorbar()
+    plt.clim(0, float(args.Emax))
+    plt.xlim(int(args.Xdim[0]), int(args.Xdim[1]))
+    plt.ylim(int(args.Ydim[0]), int(args.Ydim[1]))
+
+    plt.tight_layout()
+    plt.savefig(f"figures/pre_rw_{args.job}.png")
+    plt.show()
+
 ##REWEIGHTING
 ##  SET flag for Gaussian fitting of deltaV
     if args.fit:
@@ -131,10 +146,11 @@ def main():
         MCweight=np.zeros(len(dV))
         beta_dV=np.multiply(dV,beta)
         for x in range(0,n+1):
-          MCweight=np.add(MCweight,(np.divide(np.power(beta_dV, x), float(scipy.misc.factorial(x)))))
+          MCweight=np.add(MCweight,(np.divide(np.power(beta_dV, x), float(scipy.special.factorial(x)))))
         weights=MCweight
         hist2,newedgesX,newedgesY = np.histogram2d(data[:,0], data[:,1], bins = (binsX, binsY), weights=weights)
-        hist2=prephist(hist2,T,cb_max)
+        #hist2=prephist(hist2,T,cb_max)
+        hist2 = -np.log(np.divide(hist2, np.max(hist2))) # norm
     elif args.job == "amdweight":
         hist2,newedgesX,newedgesY = np.histogram2d(data[:,0], data[:,1], bins = (binsX, binsY), weights=weights)
         hist2=prephist(hist2,T,cb_max)
@@ -187,40 +203,48 @@ def main():
 
 ###PLOTTING FUNCTION FOR FREE ENERGY FIGURE
     if plt_figs :
-        cbar_ticks=[0, cb_max*.25, cb_max*.5, cb_max*.75, cb_max]
-        plt.figure(2, figsize=(11,8.5))
+        #cbar_ticks=[0, cb_max*.25, cb_max*.5, cb_max*.75, cb_max]
+        cbar_ticks=[0, cb_max*.25, cb_max*.5, cb_max*.75, 8.0] # OG
+        
+        #plt.figure(2, figsize=(11,8.5)) # og
+        
         extent = [newedgesX[0], newedgesX[-1], newedgesY[-1], newedgesY[0]]
-        print (extent)
-        plt.imshow(hist2.transpose(), extent=extent, interpolation='gaussian')
-        #plt.imshow(hist2.transpose(), extent=extent, interpolation='None')
-        #plt.pcolormesh(hist2.T)
+        print("Extent = ", extent)
+        #plt.imshow(hist2.transpose(), extent=extent, interpolation='gaussian')
+        #plt.imshow(newedgesX, newedgesY, hist2.transpose(), interpolation='gaussian')
+
+        plt.pcolormesh(newedgesX, newedgesY, hist2.T)
 
         # CHANGED
         np.savetxt("rw_hist_data.tsv", hist2.transpose(), delimiter="\t")        
         
-        cb = plt.colorbar(ticks=cbar_ticks, format=('% .1f'), aspect=10) # grab the Colorbar instance
-        imaxes = plt.gca()
-        plt.sca(cb.ax)
+        #cb = plt.colorbar(ticks=cbar_ticks, format=('% .1f'), aspect=10) # grab the Colorbar instance
+        plt.colorbar()
+        #imaxes = plt.gca()
+        #plt.sca(cb.ax)
         plt.clim(vmin=0,vmax=cb_max) # CHANGED
-        plt.yticks(fontsize=18)
+        #plt.clim(vmin=0, vmax=8.0) # OG
+        #plt.yticks(fontsize=18)
 
-        plt.sca(imaxes)
-        axis=(min(binsX), max(binsX), min(binsY), max(binsY))
-        plt.axis(axis)
+        #plt.sca(imaxes)
+        #axis=(min(binsX), max(binsX), min(binsY), max(binsY))
+        #plt.axis(axis)
 
         # CHANGED
         #plt.xlim(0,100)
         #plt.ylim(0,15)        
 
-        plt.xticks(size='18')
-        plt.yticks(size='18')
+        #plt.xticks(size='18')
+        #plt.yticks(size='18')
         # CHANGED
-        plt.xlabel('Dimer Angle',fontsize=18)
-        plt.ylabel('XTAL RMSD',fontsize=18)
+        #plt.xlabel('Dimer Angle',fontsize=18)
+        #plt.ylabel('XTAL RMSD',fontsize=18)
 
-        plt.show()
+        plt.tight_layout()
+        plt.savefig(f"figures/post_rw_{args.job}.png")
         #plt.savefig('figures/2D_Free_energy_surface.png',bbox_inches=0)
         print ("FIGURE SAVED 2D_Free_energy_surface.png")
+        plt.show()
     
 ###PLOTTING FUNCTION FOR WEIGHTS histogram
         [hist, edges] = np.histogram(weights, bins=100)
