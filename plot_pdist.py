@@ -32,7 +32,8 @@ def plot_pre_rw_pdist(file):
     plt.ylabel("RMSD to Alt PDB ($\AA$)")
 
     #plt.show()
-    plt.savefig("/Users/darian/Desktop/gamd.png")
+    plt.tight_layout()
+    plt.savefig("/Users/darian/Desktop/200ns-gamd.png", dpi=300, transparent=True)
 
 
 plot_pre_rw_pdist("data/c2_xrms.tsv")
