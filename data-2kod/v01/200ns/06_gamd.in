@@ -1,0 +1,68 @@
+! NPT with Langevin Thermostat and MC Barostat
+! 0.4ns, then 2ns cMD | 1.6ns, then 50ns GaMD equil 
+! ~150ns prod GaMD (149.2ns) 
+! this gives total output frames = 200ns
+&cntrl
+  irest     = 1,
+  ntx       = 5,
+  ig        = -1,
+  dt        = 0.002,
+  nstlim    = 101000000,    ! 202 ns   
+  nscm      = 500,
+  ntr       = 0,
+  ntb       = 2,
+  ntp       = 1,
+  barostat  = 2,
+  pres0     = 1.0,
+  mcbarint  = 100,
+  comp      = 44.6,
+  taup      = 1.0,
+  ntt       = 3,
+  temp0     = 298.0,
+  gamma_ln  = 1.0,
+  ntf       = 2,
+  ntc       = 2,
+  cut       = 10.0,
+  ntpr      = 500,
+  ntxo      = 2,
+  ntwr      = 500000,
+  ioutfm    = 1,
+  ntwx      = 500,
+  ntwe      = 2500,
+  iwrap     = 1,
+
+  !!!!!!!!!!!!!!!!!
+  ! GaMD settings !
+  !!!!!!!!!!!!!!!!!
+  igamd = 3,                ! dual boost on both dihedral and total potential energy
+
+  ! set threshold energy E for applying all boost potentials
+  ! default 1 to set E to the lower bound E = V_max
+  ! use 2 to set E to the upper bound E = V_min + (V_max - V_min) / k_0
+  iE = 2,                   
+
+  ! default 0 for starting a new GaMD simulation
+  ! use 1 to restart a GaMD simulation and read in the gamd-restart.dat file
+  irest_gamd = 0,
+
+  ! ntcmd = number of timesteps of conventional MD
+  ntcmdprep = 200000,       ! 0.4 ns of prep with no energy collection
+  ntcmd = 1000000,          ! 2 ns of cMD with boost parameters collected
+
+  ! nteb = number of timesteps of energy biased MD
+  ntebprep = 800000,        ! 1.6 ns of prep GaMD: pre-equil with fixed boost potential
+  nteb = 25000000,          ! 50 ns of prep GaMD: equil with updating boost potential
+
+  ! GaMD will then be ran for n timesteps up until nstlim
+
+  ! simulation steps used to calc the avg and stdev of potential energies
+  ! this should be ~4 times the total number of atoms of the system
+  ! note: *ntcmd* and *nteb* need to be multiples of *natave*
+  ntave = 200000,
+
+  ! upper limit of the stdev of 1st potential boost for accurate reweighting
+  sigma0P = 6.0,            ! default 6 kcal/mol
+  ! upper limit of the stdev of 2nd potential boost for accurate reweighting for dual boost
+  sigma0D = 6.0,            ! default 6 kcal/mol
+&end
+
