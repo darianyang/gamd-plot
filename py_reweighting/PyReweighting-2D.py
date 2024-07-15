@@ -218,7 +218,10 @@ def main():
         plt.pcolormesh(newedgesX, newedgesY, hist2.T)
 
         # CHANGED
-        np.savetxt("rw_hist_data.tsv", hist2.transpose(), delimiter="\t")        
+        #np.savetxt("rw_hist_data.tsv", hist2.T, delimiter="\t")
+        np.savetxt(f"rw_hist_{args.job}.txt", hist2.T)
+        np.savetxt(f"xedges_{args.job}.txt", newedgesX)
+        np.savetxt(f"yedges_{args.job}.txt", newedgesY)
         
         #cb = plt.colorbar(ticks=cbar_ticks, format=('% .1f'), aspect=10) # grab the Colorbar instance
         plt.colorbar()
