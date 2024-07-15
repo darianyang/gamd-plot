@@ -11,7 +11,8 @@ for SYS in ${SYSTEMS[@]} ; do
     cd $FF
     for VER in $(seq -f "%02g" 0 1 4) ; do
         mkdir -p v$VER/$OUT_ROOT
-        rsync -axvhP $SOURCE/$SYS/v$VER/06_gamd.in v$VER/$OUT_ROOT/
+        #rsync -axvhP $SOURCE/$SYS/v$VER/06_gamd.in v$VER/$OUT_ROOT/
+        rsync -axvhP $SOURCE/$SYS/v$VER/200ns/*.dat v$VER/$OUT_ROOT/
     done
     cd ../
 done
